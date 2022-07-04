@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_routing/body.dart';
 import 'package:flutter_routing/carrousel.dart';
 import 'package:flutter_routing/category.dart';
+import 'package:flutter_routing/kue.dart';
 import 'package:flutter_routing/main.dart';
 
 import 'akun.dart';

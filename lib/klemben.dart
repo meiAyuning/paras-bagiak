@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/ladrang.dart';
+import 'package:flutter_routing/rengginang.dart';
 
 class Klemben extends StatelessWidget {
   const Klemben({Key? key}) : super(key: key);
@@ -8,6 +10,16 @@ class Klemben extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 116, 52, 0),
+          centerTitle: true,
+          title: const Text('DETAIL KUE KERING'),
+          leading: Image.asset(
+            'images/Logo.png',
+            height: 55,
+            width: 55,
+          ),
+        ),
         body: Center(
           child: Container(
             child: Column(
@@ -32,7 +44,8 @@ class Klemben extends StatelessWidget {
                             child: Text(
                               'KLEMBEN',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 116, 76, 2),fontSize: 17),
+                                  color: Color.fromARGB(255, 116, 76, 2),
+                                  fontSize: 17),
                             ),
                           ),
                           Container(
@@ -67,13 +80,22 @@ class Klemben extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/klemben.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Klemben()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/klemben.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -106,13 +128,22 @@ class Klemben extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/ladrang.jpg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Ladrang()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/ladrang.jpg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -145,13 +176,22 @@ class Klemben extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/rengginang.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Rengginang()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/rengginang.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),

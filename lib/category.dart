@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/batik.dart';
+import 'package:flutter_routing/dodol.dart';
 import 'package:flutter_routing/kue.dart';
+import 'package:flutter_routing/maduMongso.dart';
+import 'package:flutter_routing/oling.dart';
 import 'package:flutter_routing/waluh.dart';
 
 class Category extends StatelessWidget {
@@ -82,15 +86,23 @@ class Category extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
-                          Container(
-                            child: Image.asset('images/oling.jpg',
-                                height: 90, width: 120),
-                            height: 90,
-                            width: 90,
-                            padding: EdgeInsets.all(5),
-                            margin:
-                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
-                          ),
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Batik()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/oling.jpg',
+                                    height: 90, width: 120),
+                                height: 90,
+                                width: 90,
+                                padding: EdgeInsets.all(5),
+                                margin: EdgeInsetsDirectional.only(
+                                    top: 2, bottom: 0),
+                              )),
                           Container(
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(1),
@@ -162,13 +174,22 @@ class Category extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/madumongso.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Madu()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/madumongso.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -201,13 +222,22 @@ class Category extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/dodol.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dodol()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/dodol.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),

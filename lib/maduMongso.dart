@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/dodol.dart';
+import 'package:flutter_routing/waluh.dart';
 
 class Madu extends StatelessWidget {
   const Madu({Key? key}) : super(key: key);
@@ -20,15 +22,24 @@ class Madu extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Container(
-                      child: Image.asset('images/madumongso.jpeg'),
-                      height: 150,
-                      width: 150,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40)),
-                    ),
-                    Padding(
+                    GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Madu()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/madumongso.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
+                            ),
+                            Padding(
                       padding: EdgeInsets.zero,
                       child: Column(
                         children: [
@@ -74,13 +85,22 @@ class Madu extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/waluh.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Waluh()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/waluh.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -113,13 +133,22 @@ class Madu extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/madumongso.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Madu()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/madumongso.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -152,13 +181,22 @@ class Madu extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/dodol.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dodol()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/dodol.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),

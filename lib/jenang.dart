@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/dodol.dart';
 import 'package:flutter_routing/klemben.dart';
+import 'package:flutter_routing/kue.dart';
 import 'package:flutter_routing/ladrang.dart';
+import 'package:flutter_routing/maduMongso.dart';
+import 'package:flutter_routing/rengginang.dart';
+import 'package:flutter_routing/waluh.dart';
 
-class Rengginang extends StatelessWidget {
-  const Rengginang({Key? key}) : super(key: key);
+class Jenang extends StatelessWidget {
+  const Jenang({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +18,7 @@ class Rengginang extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 116, 52, 0),
           centerTitle: true,
-          title: const Text('DETAIL KUE KERING'),
+          title: const Text('Jenang'),
           leading: Image.asset(
             'images/Logo.png',
             height: 55,
@@ -22,57 +27,97 @@ class Rengginang extends StatelessWidget {
         ),
         body: Center(
           child: Container(
+            color: Color.fromARGB(255, 255, 255, 255),
             child: Column(
               children: [
                 Row(
                   children: [
                     Container(
-                      child: Image.asset('images/rengginang.jpeg'),
-                      height: 150,
-                      width: 150,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40)),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.zero,
                       child: Column(
                         children: [
+                          Container(
+                            child: Image.asset('images/dodol.jpeg',
+                                height: 90, width: 120),
+                            height: 90,
+                            width: 90,
+                            padding: EdgeInsets.all(5),
+                            margin:
+                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
+                          ),
                           Container(
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(1),
                             child: Text(
-                              'RENGGINANG',
+                              'Jenang',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 116, 76, 2),
-                                  fontSize: 17),
-                            ),
-                          ),
-                          Container(
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(5),
-                            child: Text(
-                              'Harga : Rp. 25.000',
-                              style: TextStyle(
-                                  color: Color.fromARGB(255, 151, 125, 91)),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.all(0),
-                            child: Text(
-                              'KOMPOSISI : \nBeras ketan\nGaram\nTerasi bakar\nBawang putih\nAir',
-                              style: TextStyle(
-                                  color: Color.fromARGB(255, 218, 129, 12)),
+                                  color: Color.fromARGB(255, 250, 133, 0)),
                             ),
                           ),
                         ],
                       ),
-                    )
+                      height: 170,
+                      width: 110,
+                      margin: EdgeInsets.all(5),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Image.asset('images/klemben.jpeg',
+                                height: 90, width: 120),
+                            height: 90,
+                            width: 90,
+                            padding: EdgeInsets.all(5),
+                            margin:
+                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
+                          ),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(1),
+                            child: Text(
+                              'Kue Kering',
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 214, 114, 0)),
+                              // onTap: () {
+                              //     Navigator.push(
+                              //         context, MaterialPageRoute(builder: (context) => Kue()));
+                              //   },
+                            ),
+                          ),
+                        ],
+                      ),
+                      height: 170,
+                      width: 110,
+                      margin: EdgeInsets.all(5),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Image.asset('images/oling.jpg',
+                                height: 90, width: 120),
+                            height: 90,
+                            width: 90,
+                            padding: EdgeInsets.all(5),
+                            margin:
+                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
+                          ),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(1),
+                            child: Text(
+                              'Batik',
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 214, 114, 0)),
+                            ),
+                          ),
+                        ],
+                      ),
+                      height: 170,
+                      width: 110,
+                      margin: EdgeInsets.all(5),
+                    ),
                   ],
-                ),
-                Divider(),
-                Container(
-                  child: Text('Produk Yang Mungkin Anda Suka'),
                 ),
                 Padding(
                     padding: EdgeInsets.only(left: 30),
@@ -85,11 +130,11 @@ class Rengginang extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Klemben()),
+                                      builder: (context) => const Waluh()),
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/klemben.jpeg'),
+                                child: Image.asset('images/waluh.jpeg'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -105,7 +150,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Klemben',
+                                      'Jenang Waluh',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -115,7 +160,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Harga : Rp. 35.000',
+                                      'Harga : Rp. 90.000',
                                       style: TextStyle(
                                           color: Color.fromARGB(
                                               255, 218, 129, 12)),
@@ -133,11 +178,11 @@ class Rengginang extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Ladrang()),
+                                      builder: (context) => const Madu()),
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/ladrang.jpg'),
+                                child: Image.asset('images/madumongso.jpeg'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -153,7 +198,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Ladrang Buah Naga',
+                                      'Jenang Madu Mongso',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -163,7 +208,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Harga : Rp. 45.000',
+                                      'Harga : Rp. 130.000',
                                       style: TextStyle(
                                           color: Color.fromARGB(
                                               255, 218, 129, 12)),
@@ -181,11 +226,11 @@ class Rengginang extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Rengginang()),
+                                      builder: (context) => const Dodol()),
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/rengginang.jpeg'),
+                                child: Image.asset('images/dodol.jpeg'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -201,7 +246,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Rengginang',
+                                      'Jenang Dodol Ketan Hitam',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -211,7 +256,7 @@ class Rengginang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Harga : Rp. 25.000',
+                                      'Harga : Rp. 150.000',
                                       style: TextStyle(
                                           color: Color.fromARGB(
                                               255, 218, 129, 12)),

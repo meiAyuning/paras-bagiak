@@ -22,12 +22,7 @@ Card buildCartCard(product) {
                     style: mediumText,
                   ),
                   Text(
-                    "Cocktail dress",
-                    style: smallText,
-                  ),
-                  Text("Size: XS", style: smallText),
-                  Text(
-                    "Color: Yellow",
+                    product.info,
                     style: smallText,
                   ),
                   SizedBox(height: kSpace),
@@ -58,7 +53,7 @@ Row _cartPriceDescriptionRightToImg(product) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
-      Text("\$ ${product.price}", style: mediumText),
+      Text("Rp. ${product.price}", style: mediumText),
       Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -82,7 +77,7 @@ Row _viewTotalPrice(product) {
         style: mediumText,
       ),
       Text(
-        "\$ ${product.price}",
+        "Rp. ${product.price}",
         style: mediumText,
       ),
     ],
@@ -114,7 +109,7 @@ Row _viewDeliveryPrice() {
         style: smallText,
       ),
       Text(
-        "\$0",
+        "\Rp.0",
         style: smallText,
       ),
     ],

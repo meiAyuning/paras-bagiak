@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/kangkung.dart';
+import 'package:flutter_routing/paras.dart';
 
 class Oling extends StatelessWidget {
   const Oling({Key? key}) : super(key: key);
@@ -8,19 +10,38 @@ class Oling extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 116, 52, 0),
+          centerTitle: true,
+          title: const Text('DETAIL BATIK'),
+          leading: Image.asset(
+            'images/Logo.png',
+            height: 55,
+            width: 55,
+          ),
+        ),
         body: Center(
           child: Container(
             child: Column(
               children: [
                 Row(
                   children: [
-                    Container(
-                      child: Image.asset('images/oling.jpg'),
-                      height: 150,
-                      width: 150,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40)),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Oling()),
+                        );
+                      },
+                      child: Container(
+                        child: Image.asset('images/oling.jpg'),
+                        height: 120,
+                        width: 120,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40)),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.zero,
@@ -32,7 +53,8 @@ class Oling extends StatelessWidget {
                             child: Text(
                               'BATIK GAJAH OLING',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 116, 76, 2),fontSize: 17),
+                                  color: Color.fromARGB(255, 116, 76, 2),
+                                  fontSize: 17),
                             ),
                           ),
                           Container(
@@ -67,13 +89,22 @@ class Oling extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/oling.jpg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Oling()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/oling.jpg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -106,13 +137,22 @@ class Oling extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/kangkung setingkes.jpg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Kangkung()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/kangkung setingkes.jpg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -145,13 +185,22 @@ class Oling extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/paras gempal.jpg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Paras()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/paras gempal.jpg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -184,8 +233,7 @@ class Oling extends StatelessWidget {
                         ),
                       ],
                     ))
-              
-                ],
+              ],
             ),
           ),
         ),

@@ -16,47 +16,47 @@ class Res {
         count: "3",
         description: description,
         image: "images/jenang tape.png",
-        info: "",
-        price: "5000",
+        info: "KOMPOSISI : \nTape \nGula Pasir \nTepung Terigu \nAir",
+        price: "42.000",
         size: "23/56",
         tag: "",
-        title: "Sofa"));
+        title: "Jenang Tape"));
     productList.add(Product(
         count: "1",
         description: description,
         image: Res.table,
-        info: "",
-        price: "4000",
+        info: "KOMPOSISI : \nBuah naga,Tepung Terigu\nTepung tapioka\nMentega\nGaram\nGula pasir\nAir",
+        price: "45.000",
         size: "43/506",
         tag: "",
-        title: "Table"));
+        title: "Ladrang Buah Naga"));
     productList.add(Product(
         count: "30",
         description: description,
         image: Res.lamp,
-        info: "",
-        price: "500",
-        size: "23/56",
+        info: "Dibuat dengan : \nTeknik canting tulis \nteknik cap",
+        price: "150.000",
+        size: "23/50",
         tag: "",
-        title: "Lamp"));
+        title: "Batik Gajah Oling"));
     productList.add(Product(
         count: "5",
         description: description,
         image: Res.chair,
-        info: "",
-        price: "500",
+        info: "KOMPOSISI : \nTepung ketan hitam \n Tepung ketan putih \nSantan \nGula \nGaram \nDaun pandan \nWijen",
+        price: "150.000",
         size: "23/56",
         tag: "",
-        title: "Chair"));
+        title: "Jenang Dodol Ketan Hitam"));
     productList.add(Product(
         count: "5",
         description: description,
         image: Res.table1,
-        info: "",
-        price: "500",
+        info: "Dibuat dengan \nTeknik tulis",
+        price: "140.000",
         size: "23/56",
         tag: "",
-        title: "Reading Table"));
+        title: "Batik Paras Gempal"));
     return productList;
   }
 }

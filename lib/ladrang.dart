@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/klemben.dart';
+import 'package:flutter_routing/kue.dart';
+import 'package:flutter_routing/rengginang.dart';
 
 class Ladrang extends StatelessWidget {
   const Ladrang({Key? key}) : super(key: key);
@@ -8,19 +11,38 @@ class Ladrang extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 116, 52, 0),
+          centerTitle: true,
+          title: const Text('DETAIL KUE KERING'),
+          leading: Image.asset(
+            'images/Logo.png',
+            height: 55,
+            width: 55,
+          ),
+        ),
         body: Center(
           child: Container(
             child: Column(
               children: [
                 Row(
                   children: [
-                    Container(
-                      child: Image.asset('images/ladrang.jpg'),
-                      height: 150,
-                      width: 150,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(40)),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Ladrang()),
+                        );
+                      },
+                      child: Container(
+                        child: Image.asset('images/ladrang.jpg'),
+                        height: 120,
+                        width: 120,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40)),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.zero,
@@ -32,7 +54,8 @@ class Ladrang extends StatelessWidget {
                             child: Text(
                               'LADRANG BUAH NAGA',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 116, 76, 2),fontSize: 17),
+                                  color: Color.fromARGB(255, 116, 76, 2),
+                                  fontSize: 17),
                             ),
                           ),
                           Container(
@@ -64,16 +87,25 @@ class Ladrang extends StatelessWidget {
                 Padding(
                     padding: EdgeInsets.only(left: 30),
                     child: Column(
-                      children: [
+                     children: [
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/klemben.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Klemben()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/klemben.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -106,13 +138,22 @@ class Ladrang extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/ladrang.jpg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Ladrang()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/ladrang.jpg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
@@ -145,13 +186,22 @@ class Ladrang extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              child: Image.asset('images/rengginang.jpeg'),
-                              height: 120,
-                              width: 120,
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(40)),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Rengginang()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/rengginang.jpeg'),
+                                height: 120,
+                                width: 120,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40)),
+                              ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 10),
