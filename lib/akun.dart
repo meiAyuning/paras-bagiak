@@ -18,6 +18,43 @@ class Akun extends StatelessWidget {
             color: const Color.fromARGB(255, 255, 255, 255),
             child: Column(
               children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 20.0),
+                  child: new Stack(fit: StackFit.loose, children: <Widget>[
+                    new Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        new Container(
+                            width: 140.0,
+                            height: 140.0,
+                            decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                image:
+                                    new ExactAssetImage('images/yusron.jpeg'),
+                                fit: BoxFit.cover,
+                              ),
+                            )),
+                      ],
+                    ),
+                    Padding(
+                        padding: EdgeInsets.only(top: 90.0, right: 100.0),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            new CircleAvatar(
+                              backgroundColor: Colors.red,
+                              radius: 25.0,
+                              child: new Icon(
+                                Icons.camera_alt,
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        )),
+                  ]),
+                ),
                 ListTile(
                   leading: const Icon(Icons.account_circle),
                   title: const Text('Profil'),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/akun.dart';
+import 'package:flutter_routing/home.dart';
+import 'package:flutter_routing/profil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_routing/signup.dart';
 //after login
@@ -125,7 +128,7 @@ class LoginPage extends StatelessWidget {
                                                   .size
                                                   .width,
                                               onPressed: () {
-                                                // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ProfilePage()));
+                                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
                                               },
                                               child: Text(
                                                 "Login",
