@@ -24,6 +24,30 @@ class Kangkung extends StatelessWidget {
           child: Container(
             child: Column(
               children: [
+                Container(
+                    child: Row(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(right: 8, bottom: 8),
+                      width: 30,
+                      height: 30,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.only(right: 3, bottom: 2),
+                      color: Color.fromARGB(255, 116, 52, 0),
+                      child: IconButton(
+                        padding: const EdgeInsets.only(bottom: 0.2),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back,
+                          size: 23,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
                 Row(
                   children: [
                     Container(
@@ -44,7 +68,8 @@ class Kangkung extends StatelessWidget {
                             child: Text(
                               'BATIK KANGKUNG SETINGKES',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 116, 76, 2),fontSize: 17),
+                                  color: Color.fromARGB(255, 116, 76, 2),
+                                  fontSize: 17),
                             ),
                           ),
                           Container(
@@ -136,7 +161,8 @@ class Kangkung extends StatelessWidget {
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/kangkung setingkes.jpg'),
+                                child: Image.asset(
+                                    'images/kangkung setingkes.jpg'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -223,8 +249,7 @@ class Kangkung extends StatelessWidget {
                         ),
                       ],
                     ))
-              
-                ],
+              ],
             ),
           ),
         ),

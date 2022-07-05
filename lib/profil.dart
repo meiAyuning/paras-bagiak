@@ -13,7 +13,11 @@ class Profil extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 116, 52, 0),
           centerTitle: true,
           title: const Text('My Account'),
-          leading: Image.asset('images/Logo.png', height: 55, width: 55,),
+          leading: Image.asset(
+            'images/Logo.png',
+            height: 55,
+            width: 55,
+          ),
         ),
         body: Center(
           child: Container(

@@ -10,8 +10,10 @@ class SignupPage extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          brightness: Brightness.light,
-          backgroundColor: Colors.white,
+          // brightness: Brightness.light,
+          backgroundColor: Color.fromARGB(255, 116, 52, 0),
+          centerTitle: true,
+          title: const Text('Paras Bagiak'),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -19,7 +21,7 @@ class SignupPage extends StatelessWidget {
             icon: Icon(
               Icons.arrow_back_ios,
               size: 20,
-              color: Colors.black,
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ),
@@ -28,7 +30,7 @@ class SignupPage extends StatelessWidget {
                 child: Container(
           color: Colors.white,
           child: Padding(
-            padding: const EdgeInsets.all(36.0),
+            padding: const EdgeInsets.all(30.0),
             child: Form(
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -63,25 +65,28 @@ class SignupPage extends StatelessWidget {
                                 children: <Widget>[
                                   SizedBox(height: 35),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       keyboardType: TextInputType.name,
                                       onSaved: (value) {},
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
-                                          prefixIcon: Icon(Icons.account_circle),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          prefixIcon:
+                                              Icon(Icons.account_circle),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Username",
                                           border: OutlineInputBorder(
                                               borderRadius:
                                                   BorderRadius.circular(10))),
                                     ),
-                                  ),                                  
+                                  ),
                                   SizedBox(height: 25),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       keyboardType: TextInputType.emailAddress,
@@ -89,8 +94,8 @@ class SignupPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.mail),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Email",
                                           border: OutlineInputBorder(
                                               borderRadius:
@@ -99,7 +104,8 @@ class SignupPage extends StatelessWidget {
                                   ),
                                   SizedBox(height: 25),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       keyboardType: TextInputType.phone,
@@ -107,8 +113,8 @@ class SignupPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.phone),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Phone Number",
                                           border: OutlineInputBorder(
                                               borderRadius:
@@ -117,7 +123,8 @@ class SignupPage extends StatelessWidget {
                                   ),
                                   SizedBox(height: 25),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       obscureText: true,
@@ -125,8 +132,8 @@ class SignupPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.lock),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Password",
                                           border: OutlineInputBorder(
                                               borderRadius:
@@ -135,7 +142,8 @@ class SignupPage extends StatelessWidget {
                                   ),
                                   SizedBox(height: 25),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       obscureText: true,
@@ -143,8 +151,8 @@ class SignupPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.lock),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Confirm Password",
                                           border: OutlineInputBorder(
                                               borderRadius:
@@ -162,7 +170,8 @@ class SignupPage extends StatelessWidget {
                                           elevation: 5,
                                           borderRadius:
                                               BorderRadius.circular(30),
-                                          color: Color.fromARGB(255, 116, 52, 0),
+                                          color:
+                                              Color.fromARGB(255, 116, 52, 0),
                                           child: MaterialButton(
                                               padding: EdgeInsets.fromLTRB(
                                                   20, 15, 20, 15),
@@ -265,8 +274,6 @@ class SignupPage extends StatelessWidget {
                   ]),
             ),
           ),
-        ))
-      )
-    );
+        ))));
   }
 }

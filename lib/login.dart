@@ -15,7 +15,9 @@ class LoginPage extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           brightness: Brightness.light,
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromARGB(255, 116, 52, 0),
+          centerTitle: true,
+          title: const Text('Paras Bagiak'),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -23,7 +25,7 @@ class LoginPage extends StatelessWidget {
             icon: Icon(
               Icons.arrow_back_ios,
               size: 20,
-              color: Colors.black,
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ),
@@ -32,7 +34,7 @@ class LoginPage extends StatelessWidget {
             child: Container(
               color: Colors.white,
               child: Padding(
-                  padding: const EdgeInsets.all(36.0),
+                  padding: const EdgeInsets.all(30.0),
                   child: Form(
                       child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -59,14 +61,16 @@ class LoginPage extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Card(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(25.0)),
                               color: Color.fromARGB(255, 214, 1114, 0),
                               elevation: 12,
                               child: Column(
                                 children: <Widget>[
                                   SizedBox(height: 35),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       keyboardType: TextInputType.emailAddress,
@@ -74,16 +78,18 @@ class LoginPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.mail),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20 , 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Email",
                                           border: OutlineInputBorder(
-                                              borderRadius: BorderRadius.circular(10))),
+                                              borderRadius:
+                                                  BorderRadius.circular(10))),
                                     ),
                                   ),
                                   SizedBox(height: 25),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10, right: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 10, right: 10),
                                     child: TextFormField(
                                       autofocus: false,
                                       obscureText: true,
@@ -91,25 +97,33 @@ class LoginPage extends StatelessWidget {
                                       textInputAction: TextInputAction.next,
                                       decoration: InputDecoration(
                                           prefixIcon: Icon(Icons.lock),
-                                          contentPadding:
-                                              EdgeInsets.fromLTRB(20, 15, 20, 15),
+                                          contentPadding: EdgeInsets.fromLTRB(
+                                              20, 15, 20, 15),
                                           hintText: "Password",
                                           border: OutlineInputBorder(
-                                              borderRadius: BorderRadius.circular(10))),
+                                              borderRadius:
+                                                  BorderRadius.circular(10))),
                                     ),
                                   ),
                                   SizedBox(height: 35),
                                   Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 40),
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 40),
                                     child: Container(
-                                        padding: EdgeInsets.only(top: 3, left: 3),
+                                        padding:
+                                            EdgeInsets.only(top: 3, left: 3),
                                         child: Material(
                                           elevation: 5,
-                                          borderRadius: BorderRadius.circular(30),
-                                          color: Color.fromARGB(255, 116, 52, 0),
+                                          borderRadius:
+                                              BorderRadius.circular(30),
+                                          color:
+                                              Color.fromARGB(255, 116, 52, 0),
                                           child: MaterialButton(
-                                              padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-                                              minWidth: MediaQuery.of(context).size.width,
+                                              padding: EdgeInsets.fromLTRB(
+                                                  20, 15, 20, 15),
+                                              minWidth: MediaQuery.of(context)
+                                                  .size
+                                                  .width,
                                               onPressed: () {
                                                 // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ProfilePage()));
                                               },
@@ -119,13 +133,15 @@ class LoginPage extends StatelessWidget {
                                                 style: TextStyle(
                                                     fontSize: 20,
                                                     color: Colors.white,
-                                                    fontWeight: FontWeight.bold),
+                                                    fontWeight:
+                                                        FontWeight.bold),
                                               )),
                                         )),
                                   ),
                                   SizedBox(height: 15),
                                   Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: <Widget>[
                                         Text("Don't have an Account? "),
                                         GestureDetector(
@@ -133,7 +149,8 @@ class LoginPage extends StatelessWidget {
                                             Navigator.push(
                                                 context,
                                                 MaterialPageRoute(
-                                                    builder: (context) => SignupPage()));
+                                                    builder: (context) =>
+                                                        SignupPage()));
                                           },
                                           child: Text(
                                             "SignUp",
@@ -145,43 +162,59 @@ class LoginPage extends StatelessWidget {
                                         )
                                       ]),
                                   SizedBox(height: 30.0),
-                                  Text("Or create account using social media",  style: TextStyle(color: Color.fromARGB(255, 189, 181, 181)),),
+                                  Text(
+                                    "Or create account using social media",
+                                    style: TextStyle(
+                                        color:
+                                            Color.fromARGB(255, 189, 181, 181)),
+                                  ),
                                   SizedBox(height: 25.0),
                                   Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          GestureDetector(
-                            child: FaIcon(FontAwesomeIcons.googlePlus,
-                                size: 35, color: Color.fromARGB(255, 196, 22, 25)),
-                            onTap: () {},
-                          ),
-                          SizedBox(
-                            width: 30.0,
-                          ),
-                          GestureDetector(
-                            child: Container(
-                              padding: EdgeInsets.all(0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border:
-                                    Border.all(width: 5, color: Color.fromARGB(255, 64, 170, 240)),
-                                color: Color.fromARGB(255, 64, 170, 240),
-                              ),
-                              child: FaIcon(FontAwesomeIcons.twitter,
-                                  size: 23, color: Colors.white),
-                            ),
-                            onTap: () {},
-                          ),
-                          SizedBox(
-                            width: 30.0,
-                          ),
-                          GestureDetector(
-                            child: FaIcon(FontAwesomeIcons.facebook,
-                                size: 35, color: Color.fromARGB(235, 21, 1, 77)),
-                            onTap: () {},
-                          ),
-                        ],
-                      ),
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      GestureDetector(
+                                        child: FaIcon(
+                                            FontAwesomeIcons.googlePlus,
+                                            size: 35,
+                                            color: Color.fromARGB(
+                                                255, 196, 22, 25)),
+                                        onTap: () {},
+                                      ),
+                                      SizedBox(
+                                        width: 30.0,
+                                      ),
+                                      GestureDetector(
+                                        child: Container(
+                                          padding: EdgeInsets.all(0),
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(100),
+                                            border: Border.all(
+                                                width: 5,
+                                                color: Color.fromARGB(
+                                                    255, 64, 170, 240)),
+                                            color: Color.fromARGB(
+                                                255, 64, 170, 240),
+                                          ),
+                                          child: FaIcon(
+                                              FontAwesomeIcons.twitter,
+                                              size: 23,
+                                              color: Colors.white),
+                                        ),
+                                        onTap: () {},
+                                      ),
+                                      SizedBox(
+                                        width: 30.0,
+                                      ),
+                                      GestureDetector(
+                                        child: FaIcon(FontAwesomeIcons.facebook,
+                                            size: 35,
+                                            color:
+                                                Color.fromARGB(235, 21, 1, 77)),
+                                        onTap: () {},
+                                      ),
+                                    ],
+                                  ),
                                   SizedBox(height: 50),
                                 ],
                               ),

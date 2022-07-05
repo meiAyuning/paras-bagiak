@@ -24,6 +24,30 @@ class Klemben extends StatelessWidget {
           child: Container(
             child: Column(
               children: [
+                Container(
+                    child: Row(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(right: 8, bottom: 8),
+                      width: 30,
+                      height: 30,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.only(right: 3, bottom: 2),
+                      color: Color.fromARGB(255, 116, 52, 0),
+                      child: IconButton(
+                        padding: const EdgeInsets.only(bottom: 0.2),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back,
+                          size: 23,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
                 Row(
                   children: [
                     Container(

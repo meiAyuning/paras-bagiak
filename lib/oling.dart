@@ -24,6 +24,30 @@ class Oling extends StatelessWidget {
           child: Container(
             child: Column(
               children: [
+                Container(
+                    child: Row(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(right: 8, bottom: 8),
+                      width: 30,
+                      height: 30,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.only(right: 3, bottom: 2),
+                      color: Color.fromARGB(255, 116, 52, 0),
+                      child: IconButton(
+                        padding: const EdgeInsets.only(bottom: 0.2),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back,
+                          size: 23,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
                 Row(
                   children: [
                     GestureDetector(
@@ -61,7 +85,7 @@ class Oling extends StatelessWidget {
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(5),
                             child: Text(
-                              'Harga : Rp. 150.000',
+                              'Harga : Rp. 300.000',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 151, 125, 91)),
                             ),
@@ -69,7 +93,7 @@ class Oling extends StatelessWidget {
                           Container(
                             padding: EdgeInsets.all(0),
                             child: Text(
-                              'Dibuat dengan : \nTeknik canting tulis \nteknik cap',
+                              'Dibuat dengan : \nTeknik canting Tulis \nTeknik Cap',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 218, 129, 12)),
                             ),
@@ -146,7 +170,8 @@ class Oling extends StatelessWidget {
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/kangkung setingkes.jpg'),
+                                child: Image.asset(
+                                    'images/kangkung setingkes.jpg'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),

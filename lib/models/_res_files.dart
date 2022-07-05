@@ -35,7 +35,7 @@ class Res {
         description: description,
         image: Res.lamp,
         info: "Dibuat dengan : \nTeknik canting tulis \nteknik cap",
-        price: "150.000",
+        price: "300.000",
         size: "23/50",
         tag: "",
         title: "Batik Gajah Oling"));
