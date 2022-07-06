@@ -83,10 +83,9 @@ class Tape extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // alignment: Alignment.center,
                             padding: EdgeInsets.all(0),
                             child: Text(
-                              'KOMPOSISI : \nTepung ketan\nTepung beras\nGula pasir\nSantan\nVanili bubuk\nGaram\nLabu kuning',
+                              'KOMPOSISI : \nTepung Terigu\nGula pasir\nTape\nAir',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 218, 129, 12)),
                             ),

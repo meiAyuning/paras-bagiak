@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_routing/dodol.dart';
+import 'package:flutter_routing/tape.dart';
 import 'package:flutter_routing/waluh.dart';
 
 class Madu extends StatelessWidget {
@@ -74,7 +75,7 @@ class Madu extends StatelessWidget {
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(1),
                             child: Text(
-                              'JENANG MADU MONGSO',
+                              'JENANG MADUMONGSO',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 116, 76, 2),
                                   fontSize: 17),
@@ -90,7 +91,6 @@ class Madu extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // alignment: Alignment.center,
                             padding: EdgeInsets.all(0),
                             child: Text(
                               'KOMPOSISI : \nTepung ketan hitam\nGula merah putih\nGula pasir\nSantan\nDaun pandan\nVanili',
@@ -166,11 +166,11 @@ class Madu extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Madu()),
+                                      builder: (context) => const Tape()),
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/madumongso.jpeg'),
+                                child: Image.asset('images/jenang tape.png'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -186,7 +186,7 @@ class Madu extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Jenang Madu Mongso',
+                                      'Jenang Tape',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -196,7 +196,7 @@ class Madu extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Harga : Rp. 130.000',
+                                      'Harga : Rp. 42.000',
                                       style: TextStyle(
                                           color: Color.fromARGB(
                                               255, 218, 129, 12)),

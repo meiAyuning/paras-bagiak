@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_routing/akun.dart';
 import 'package:flutter_routing/home.dart';
-import 'package:flutter_routing/profil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_routing/signup.dart';
-//after login
-// import 'profile_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);

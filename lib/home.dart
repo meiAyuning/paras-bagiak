@@ -90,8 +90,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             backgroundColor: Color.fromARGB(255, 116, 52, 0),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.perm_contact_cal_rounded),
-            label: 'Contact',
+            icon: Icon(Icons.settings),
+            label: 'Settings',
             backgroundColor: Color.fromARGB(255, 116, 52, 0),
           ),
         ],
@@ -114,7 +114,7 @@ class CustomSearchDelegate extends SearchDelegate {
     'Gajah Oling',
     'Bagiak',
     'Kangkung Setingkes',
-    'Kucur'
+    'Ladrang Buah Naga'
   ];
 
   @override

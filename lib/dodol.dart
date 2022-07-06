@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_routing/maduMongso.dart';
+import 'package:flutter_routing/tape.dart';
 import 'package:flutter_routing/waluh.dart';
 
 class Dodol extends StatelessWidget {
@@ -85,7 +86,7 @@ class Dodol extends StatelessWidget {
                             // alignment: Alignment.center,
                             padding: EdgeInsets.all(0),
                             child: Text(
-                              'KOMPOSISI : \nTepung ketan hitam\nGula merah putih\nGula pasir\nSantan\nDaun pandan\nVanili',
+                              'KOMPOSISI : \nTepung Ketan Hitam\nGula Merah\nGula Pasir\nSantan\nDaun Pandan\nVanili',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 218, 129, 12)),
                             ),
@@ -178,7 +179,7 @@ class Dodol extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Jenang Madu Mongso',
+                                      'Jenang Madumongso',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -206,11 +207,11 @@ class Dodol extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Dodol()),
+                                      builder: (context) => const Tape()),
                                 );
                               },
                               child: Container(
-                                child: Image.asset('images/dodol.jpeg'),
+                                child: Image.asset('images/jenang tape.png'),
                                 height: 120,
                                 width: 120,
                                 padding: EdgeInsets.all(10),
@@ -226,7 +227,7 @@ class Dodol extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Jenang Dodol Ketan Hitam',
+                                      'Jenang Tape',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
@@ -236,7 +237,7 @@ class Dodol extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Harga : Rp. 150.000',
+                                      'Harga : Rp. 42.000',
                                       style: TextStyle(
                                           color: Color.fromARGB(
                                               255, 218, 129, 12)),

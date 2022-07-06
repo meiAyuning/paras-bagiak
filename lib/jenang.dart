@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/batik.dart';
 import 'package:flutter_routing/dodol.dart';
 import 'package:flutter_routing/klemben.dart';
 import 'package:flutter_routing/kue.dart';
@@ -62,26 +63,30 @@ class Jenang extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
-                          Container(
-                            child: Image.asset('images/klemben.jpeg',
-                                height: 90, width: 120),
-                            height: 90,
-                            width: 90,
-                            padding: EdgeInsets.all(5),
-                            margin:
-                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
-                          ),
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Kue()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/klemben.jpeg',
+                                    height: 90, width: 120),
+                                height: 90,
+                                width: 90,
+                                padding: EdgeInsets.all(5),
+                                margin: EdgeInsetsDirectional.only(
+                                    top: 2, bottom: 0),
+                              )),
                           Container(
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(1),
                             child: Text(
                               'Kue Kering',
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 214, 114, 0)),
-                              // onTap: () {
-                              //     Navigator.push(
-                              //         context, MaterialPageRoute(builder: (context) => Kue()));
-                              //   },
+                                  color: Color.fromARGB(255, 214, 114, 0))
                             ),
                           ),
                         ],
@@ -93,15 +98,23 @@ class Jenang extends StatelessWidget {
                     Container(
                       child: Column(
                         children: [
-                          Container(
-                            child: Image.asset('images/oling.jpg',
-                                height: 90, width: 120),
-                            height: 90,
-                            width: 90,
-                            padding: EdgeInsets.all(5),
-                            margin:
-                                EdgeInsetsDirectional.only(top: 2, bottom: 0),
-                          ),
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Batik()),
+                                );
+                              },
+                              child: Container(
+                                child: Image.asset('images/oling.jpg',
+                                    height: 90, width: 120),
+                                height: 90,
+                                width: 90,
+                                padding: EdgeInsets.all(5),
+                                margin: EdgeInsetsDirectional.only(
+                                    top: 2, bottom: 0),
+                              )),
                           Container(
                             alignment: Alignment.center,
                             padding: EdgeInsets.all(1),
@@ -198,7 +211,7 @@ class Jenang extends StatelessWidget {
                                     alignment: Alignment.center,
                                     padding: EdgeInsets.all(1),
                                     child: Text(
-                                      'Jenang Madu Mongso',
+                                      'Jenang Madumongso',
                                       style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 160, 107, 8)),
